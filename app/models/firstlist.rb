@@ -1,0 +1,2 @@
+class Firstlist < ApplicationRecord
+end
