@@ -1,0 +1,97 @@
+/* body {  
+  font-family: "MPLUS1p";
+  display: block;
+} */
+
+.header {
+  width: 100%;
+  height: 63px;
+  background: #E3E3E3;
+  display: flex;
+}
+
+.header-logo {
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 112px;
+  height: 33px;
+}
+
+
+.header-right {
+  position: absolute;
+  right: 30px;
+}
+
+.login-lists {
+  list-style: none;
+  display: flex;
+  text-align: right
+}
+
+.log-in-btn {
+  margin-top:1px;
+  /* margin-right: 150px; */
+  width: 144px;
+  height: 33px;
+  background: #36929A;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+  margin: 0 20px;
+}
+
+.sign-up-btn {
+  margin-top:1px;
+  /* margin-right: 150px; */
+  width: 144px;
+  height: 33px;
+  background: #E7422D;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+}
+
+
+/* メインコンテンツ */
+
+
+.main-content {
+  width: 100vh - 126px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.login-content {
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.main-copy {
+  /* font-family:TsukuARdGothic-Regular-83pv-RKSJ-H; */
+  font-size:20px;
+  margin-left: 75px;
+}
+
+.main-logo {
+width: 674px;
+height: 204px;
+}
+
+/* フッター */
+
+footer {
+  width: 100%;
+  height: 63px;
+  background: #E3E3E3;
+
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+}
