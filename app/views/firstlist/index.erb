@@ -14,10 +14,10 @@
   <h2 class="menu-title">my List-list</h2>
 
   <% @firstlists.each do |item| %>
-    <li class='list-table'>
-      <%= link_to hoge_path(hoge.id) do %>
-        <div class = 'firstlist-content'>
-        </div>
+  <li class='list-table'>      <%= link_to hoge_path(hoge.id) do %>
+    <%= link_to "@firstlist.title", "#", class: "main-list" %>
+      </li>
+
     <% end %>
   <% end %>
   <%# リストがない場合のダミー %>
