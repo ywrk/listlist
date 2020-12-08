@@ -196,20 +196,84 @@ align-items: center;
 
 .left_menu {
   width: 25%;
-
 }
 
 .main_menu {
   width: 50%;
-  height:90vh;
-  /* background: #36929A; */
-}
-.right_menu {
-  width: 25%;
-  height: 90vh;
-  background: #34515a;
+  display: flex;
 }
 
-.board {
-  background-image: url(listlist_bgimage.png)
+.right_menu {
+  width: 25%;
 }
+
+.menu-title {
+  position: relative;
+  top: -30px;
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* 右のメニュー */
+
+.right-list1 {
+  position: absolute;
+  top: 122px;
+  margin: 0 0 auto 57px;
+  width: 244px;
+  height: 57px;
+  background: #E3E3E3;
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-list2 {
+  position: absolute;
+  margin: 0 0 auto 57px;
+  top: 207px;
+  width: 244px;
+  height: 57px;
+  background: #E3E3E3;
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.list-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-list {
+  position:relative;
+  top:-70px;
+  width: 258px;
+  height: 58px;
+  background: #FFFFFF;
+  opacity: 0.8;
+
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 19px 10px 19px;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
