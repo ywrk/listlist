@@ -10,12 +10,39 @@
 
 <%# メインメニュー %>
 <div class="main_menu">
-  <div class="board">
+  <div class="bg_image">
+  <h2 class="menu-title">my List-list</h2>
+
+  <% @firstlists.each do |item| %>
+    <li class='list-table'>
+      <%= link_to hoge_path(hoge.id) do %>
+        <div class = 'firstlist-content'>
+        </div>
+    <% end %>
+  <% end %>
+  <%# リストがない場合のダミー %>
+  <% if @firstlists.empty? %>
+  <li class='list-table'>
+    <%= link_to "休日のそうじ", "#", class: "main-list" %>
+    <%= link_to "勉強前にすること", "#", class: "main-list" %>
+    <%= link_to "休憩にすること", "#", class: "main-list" %>
+    <%= link_to "外食", "#", class: "main-list" %>
+    <%= link_to "校正確認", "#", class: "main-list" %>
+    <%= link_to "寝る前にすること", "#", class: "main-list" %>
+  </li>
+  <%end%>
+  <%# リストがない場合のダミー %>
+
+
+
   </div>
 </div>
 
 <%# 右側のメニュー %>
 <div class="right_menu">
+  <%= link_to "新規リスト", "#", class: "right-list1" %>
+  <%= link_to "並び替え", "#", class: "right-list2" %>
 </div>
 
 </div>
+
