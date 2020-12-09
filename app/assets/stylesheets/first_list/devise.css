@@ -8,7 +8,7 @@
 
 
 .input-default {
-  margin-left: 105px;
+  /* margin-left: 105px; */
   width: 348px;
   height: 34px;
   
@@ -21,7 +21,7 @@
 }
 
 .login-btn {
-  margin-left: 105px;
+  /* margin-left: 105px; */
 
   width: 348px;
   height: 34px;
@@ -37,7 +37,7 @@
 }
 
 .register-btn {
-  margin-left: 105px;
+  /* margin-left: 105px; */
 
   width: 348px;
   height: 34px;

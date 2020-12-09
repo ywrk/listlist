@@ -32,7 +32,7 @@
 .log-in-btn {
   font-size: 18px;
   margin-top:1px;
-  /* margin-right: 150px; */
+  margin-right: 150px;
   width: 144px;
   height: 33px;
   background: #36929A;
@@ -101,13 +101,14 @@
 .main-copy {
   font-family: "游ゴシック", "YuGothic";
   font-size:20px;
-  margin-left: 105px;
+  /* margin-left: 105px; */
 }
 
 .main-logo {
 width: 674px;
 height: 204px;
 margin-bottom: 50px;
+margin-left: -100px;
 }
 
 /* フッター */
@@ -277,3 +278,55 @@ align-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.new-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-form :first-child {
+  width: 70%;
+  height: 60px;
+  border:none;
+  opacity: 0.8;
+  margin: 0px 10px 20px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.firstlist-form {
+  width: 70%;
+  height: 60px;
+  border:none;
+  opacity: 0.8;
+  margin: 5px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.submit-btn {
+  position: absolute;
+  top: 122px;
+  margin: 0 0 auto 57px;
+  width: 244px;
+  height: 57px;
+  background: #E7422D;
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
