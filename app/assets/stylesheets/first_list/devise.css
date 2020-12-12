@@ -8,7 +8,7 @@
 
 
 .input-default {
-  margin-left: 105px;
+  /* margin-left: 105px; */
   width: 348px;
   height: 34px;
   
@@ -21,7 +21,7 @@
 }
 
 .login-btn {
-  margin-left: 105px;
+  /* margin-left: 105px; */
 
   width: 348px;
   height: 34px;
@@ -37,7 +37,7 @@
 }
 
 .register-btn {
-  margin-left: 105px;
+  /* margin-left: 105px; */
 
   width: 348px;
   height: 34px;
@@ -52,14 +52,12 @@
   cursor: pointer;
 }
 
-
-
 /* .register-red-btn {
   width: 100%;
   background: #ea352d;
   border: 1px solid #ea352d;
-  /* color: #fff;
-  line-height: 48px; */ */
-  /* font-size: 14px; */
-  /* cursor: pointer; */
-}
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+} */
