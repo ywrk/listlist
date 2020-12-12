@@ -3,7 +3,7 @@
   <p class="main-copy">Listのスペシャリストになろう</p>
   <%= image_tag("main_logo.png", alt: "メインロゴ画像", class: "main-logo") %>
 
-<%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
+<%= form_with(model: @user, url: user_registration_path, class: 'registration-main', local: true)do |f| %>
 <div class='field'>
 
   <%# <%= render 'shared/error_messages', model: f.object %>
@@ -13,7 +13,7 @@
   </div>
 
   <div class="field">
-    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレス", autofocus: true %>
+    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレス" %>
   </div>
 
   <div class="field">

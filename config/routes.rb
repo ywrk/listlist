@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "firstlist#index"
+  root to: "firstlists#index"
 
-  resources :firstlist, only: [:index, :new, :create]
+  resources :firstlists, only: [:index, :new, :create, :show]
   
 end

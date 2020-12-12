@@ -8,6 +8,7 @@ class CreateFirstlists < ActiveRecord::Migration[6.0]
       t.string  :text4                , null: false
       t.string  :text5                , null: false
       t.string  :text6                , null: false
+      t.references  :user             , foreign_key: true
       t.timestamps
     end
   end

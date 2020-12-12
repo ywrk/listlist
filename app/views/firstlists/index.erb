@@ -2,7 +2,7 @@
 
 <%# 左側のメニュー %>
 <div class="left_menu">
-  <%= link_to "my List-list", "#", class: "side-list1" %>
+  <%= link_to "my List-list", firstlists_path, class: "side-list1" %>
   <%= link_to "知ってほしいこと", "#", class: "side-list2" %>
   <%= link_to "みんなのList-list", "#", class: "side-list3" %>
   <%= link_to "アカウント情報", "#", class: "side-list4" %>
@@ -13,12 +13,10 @@
   <div class="bg_image">
   <h2 class="menu-title">my List-list</h2>
 
-  <% @firstlists.each do |item| %>
-  <li class='list-table'>      <%= link_to hoge_path(hoge.id) do %>
-    <%= link_to "@firstlist.title", "#", class: "main-list" %>
-      </li>
-
-    <% end %>
+  <% @firstlists.each do |firstlist| %>
+  <li class='list-table'> 
+    <%= link_to "#{firstlist.title}", firstlist_path(firstlist), class: "main-list" %>
+  </li>
   <% end %>
   <%# リストがない場合のダミー %>
   <% if @firstlists.empty? %>
