@@ -13,11 +13,18 @@
   <div class="bg_image">
   <h2 class="menu-title">my List-list</h2>
 
-  <% @firstlists.each do |firstlist| %>
   <li class='list-table'> 
-    <%= link_to "#{firstlist.title}", firstlist_path(firstlist), class: "main-list" %>
+    <% list_count = 0 %> <%# ※1 %>
+    <% @firstlists.each do |firstlist| %>
+      <%= link_to "#{firstlist.title}", firstlist_path(firstlist), class: "main-list" %>
+      <% list_count += 1 %>
+    <% end %>
+    <%# ※1.以下 listの合計が奇数の場合、最後の列が中央配置になってしまう。それを避けるため、見えないリストを挿入している %>
+      <% if list_count % 2 == 1 %>
+      <div class="main-list-hidden"></div>
+      <% end %>
   </li>
-  <% end %>
+  
   <%# リストがない場合のダミー %>
   <% if @firstlists.empty? %>
   <li class='list-table'>
