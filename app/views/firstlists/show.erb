@@ -1,0 +1,48 @@
+<div class="main_display">
+
+<%# 左側のメニュー %>
+<div class="left_menu">
+  <%= link_to "my List-list", firstlists_path, class: "side-list1" %>
+  <%= link_to "知ってほしいこと", "#", class: "side-list2" %>
+  <%= link_to "みんなのList-list", "#", class: "side-list3" %>
+  <%= link_to "アカウント情報", "#", class: "side-list4" %>
+</div>
+
+<%# メインメニュー %>
+<div class="main_menu">
+  <div class="bg_image">
+
+  <li class='firstlist-table'> 
+    <%= link_to "#{@firstlist.title}", "#", class: "firstlist-title" %>
+    <% if @firstlist.text1.present? %>
+      <%= link_to "#{@firstlist.text1}", "#", class: "firstlist-list" %>
+    <% end %>
+    <% if @firstlist.text2.present? %>
+      <%= link_to "#{@firstlist.text2}", "#", class: "firstlist-list" %>
+    <% end %>
+    <% if @firstlist.text3.present? %>
+      <%= link_to "#{@firstlist.text3}", "#", class: "firstlist-list" %>
+    <% end %>
+    <% if @firstlist.text4.present? %>
+      <%= link_to "#{@firstlist.text4}", "#", class: "firstlist-list" %>
+    <% end %>
+    <% if @firstlist.text5.present? %>
+      <%= link_to "#{@firstlist.text5}", "#", class: "firstlist-list" %>
+    <% end %>
+    <% if @firstlist.text6.present? %>
+      <%= link_to "#{@firstlist.text6}", "#", class: "firstlist-list" %>
+    <% end %>
+  </li>
+
+  </div>
+</div>
+
+<%# 右側のメニュー %>
+<div class="right_menu">
+  <%= link_to "新規リスト", new_firstlist_path, class: "right-list1" %>
+  <%= link_to "並び替え", "#", class: "right-list2" %>
+  <%= link_to "AUTO SELECT", "#", class: "auto-select-box" %>
+</div>
+
+</div>
+

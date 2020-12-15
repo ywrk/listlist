@@ -210,8 +210,9 @@ align-items: center;
 
 .menu-title {
   position: relative;
-  top: -30px;
-  font-size: 50px;
+  height: 115px;
+  top: 0px;
+  font-size: 36px;
   text-align: center;
   opacity: 0.8;
 }
@@ -230,6 +231,7 @@ align-items: center;
   color: black;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
@@ -325,7 +327,6 @@ align-items: center;
   justify-content: center;
   align-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
 }
 
 .submit-btn {

@@ -1,0 +1,63 @@
+.firstlist-table {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstlist-table :first-child {
+  width: 70%;
+  height: 60px;
+  border:none;
+  opacity: 0.8;
+  margin: 0px 10px 20px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+
+.firstlist-list {
+  width: 70%;
+  height: 60px;
+  border:none;
+  margin: 5px 10px;
+  background: #FFFFFF;
+  opacity: 0.8;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.auto-select-box {
+  position: absolute;
+  margin: 0 0 auto 57px;
+  top: 297px;
+  width: 244px;
+  height: 57px;
+  background: #BA63B7;
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  font-size:24px;
+  font-weight:bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
