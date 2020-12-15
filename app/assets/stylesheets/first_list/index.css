@@ -330,11 +330,10 @@ align-items: center;
 }
 
 .submit-btn {
-  position: absolute;
-  top: 122px;
-  margin: 0 0 auto 57px;
-  width: 244px;
-  height: 57px;
+  position: relative;
+  top: 40px;
+  width: 50%;
+  height: 60px;
   background: #E7422D;
   opacity: 1;
   text-decoration: none;

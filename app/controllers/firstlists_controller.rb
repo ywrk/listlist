@@ -1,4 +1,5 @@
 class FirstlistsController < ApplicationController
+  before_action :set_firstlist, except: [:index, :new, :create]
 
   def index
     @firstlists = Firstlist.all
@@ -18,15 +19,12 @@ class FirstlistsController < ApplicationController
   end
 
   def show
-    @firstlist = Firstlist.find(params[:id])
   end
 
   def edit
-    @firstlist = Firstlist.find(params[:id])
   end
 
   def update
-    @firstlist = Firstlist.find(params[:id])
     if @firstlist.update(firstlist_params)
       redirect_to firstlist_path(@firstlist)
     else
@@ -38,6 +36,10 @@ class FirstlistsController < ApplicationController
 
   def firstlist_params
     params.require(:firstlist).permit(:title, :text1, :text2, :text3, :text4, :text5, :text6).merge(user_id: current_user.id)
+  end
+
+  def set_firstlist
+    @firstlist = Firstlist.find(params[:id])
   end
   
   
