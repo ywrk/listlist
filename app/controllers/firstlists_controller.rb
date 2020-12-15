@@ -21,6 +21,19 @@ class FirstlistsController < ApplicationController
     @firstlist = Firstlist.find(params[:id])
   end
 
+  def edit
+    @firstlist = Firstlist.find(params[:id])
+  end
+
+  def update
+    @firstlist = Firstlist.find(params[:id])
+    if @firstlist.update(firstlist_params)
+      redirect_to firstlist_path(@firstlist)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def firstlist_params
