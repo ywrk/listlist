@@ -32,6 +32,14 @@ class FirstlistsController < ApplicationController
     end
   end
 
+  def destroy
+
+    if @firstlist.destroy
+      redirect_to action: :index 
+    end
+    
+  end
+
   private
 
   def firstlist_params
