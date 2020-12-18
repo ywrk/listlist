@@ -87,7 +87,7 @@
 
 
 .main-content {
-  width: 100vh - 126px;
+  width: calc(100vh - 126px);
   left: 50%;
   position: absolute;
   top: 50%;
