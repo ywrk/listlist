@@ -91,11 +91,11 @@ test@mail
 | Column | Type | Options |
 | --------------------- | ----------- | ------------------------------- |
 | title | string | null: false |
+| text1 | string | |
 | text2 | string | |
 | text3 | string | |
 | text4 | string | |
 | text5 | string | |
-| text1 | string | |
 | text6 | string | |
 | user | references | null: false, foreign_key: true |
 | firstlist | references | null: false, foreign_key: true |
