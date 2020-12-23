@@ -11,4 +11,8 @@ class Firstlist < ApplicationRecord
   # validates :text4
   # validates :text5
   # validates :text6
+
+  # def self.auto_select
+  # end
+
 end

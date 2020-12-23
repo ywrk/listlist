@@ -1,0 +1,49 @@
+<div class="main_display">
+
+<%# 左側のメニュー %>
+  <%= render partial: 'left_menu' %>
+
+<%# メインメニュー %>
+<div class="main_menu">
+  <div class="bg_image">
+
+  <li class='firstlist-table'> 
+    <div  class = "firstlist-title">
+      <%= "AUTO SELECT" %>
+    </div>
+    <div  class = "auto-select-copy">
+      <%= "結果はコレ！" %>
+    </div>
+    <div  class = "firstlist-list" >
+
+      <% num = rand(1..6) %>
+      <% if num == 1 %>
+        <%= "#{@firstlist.text1}" %>
+        <%# if @firstlist.text1 == nil %>
+        <%# 空だった場合もう一度条件式をやり直したい %>
+      <% elsif num == 2 %>
+        <%= "#{@firstlist.text2}" %>
+      <% elsif num == 3 %>
+        <%= "#{@firstlist.text3}" %>
+      <% elsif num == 4 %>
+        <%= "#{@firstlist.text4}" %>
+      <% elsif num == 5 %>
+        <%= "#{@firstlist.text5}" %>
+      <% elsif num == 6 %>
+        <%= "#{@firstlist.text6}" %>
+      <% end %>
+
+    </div>
+  </li>
+
+  </div>
+</div>
+
+<%# 右側のメニュー %>
+<div class="right_menu">
+  <%= link_to "戻る", "#", class: "right-list1" %>
+  <%= link_to "もう一回！", auto_select_firstlist_path, class: "auto-select-box" %>
+</div>
+
+</div>
+

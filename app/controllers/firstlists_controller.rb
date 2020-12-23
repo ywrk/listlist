@@ -33,11 +33,14 @@ class FirstlistsController < ApplicationController
   end
 
   def destroy
-
     if @firstlist.destroy
       redirect_to action: :index 
     end
-    
+  end
+
+  def auto_select
+    @firstlist = Firstlist.find(params[:id])
+    #あとでbefore_actionにする
   end
 
   private
