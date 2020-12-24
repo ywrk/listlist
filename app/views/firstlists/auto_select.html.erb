@@ -1,49 +1,78 @@
 <div class="main_display">
 
 <%# 左側のメニュー %>
-  <%= render partial: 'left_menu' %>
+<%= render partial: 'left_menu' %>
 
 <%# メインメニュー %>
 <div class="main_menu">
-  <div class="bg_image">
+<div class="bg_image">
 
-  <li class='firstlist-table'> 
-    <div  class = "firstlist-title">
-      <%= "AUTO SELECT" %>
-    </div>
-    <div  class = "auto-select-copy">
-      <%= "結果はコレ！" %>
-    </div>
-    <div  class = "firstlist-list" >
+<li class='firstlist-table'> 
+  <div  class = "firstlist-title">
+    <%= "AUTO SELECT" %>
+  </div>
 
+  <div  class = "auto-select-copy">
+    <%= "結果はコレ！" %>
+  </div>
+
+  <div  class = "firstlist-list" >
+    <% i = 0 %>
+    <% while i == 0 %>
       <% num = rand(1..6) %>
       <% if num == 1 %>
-        <%= "#{@firstlist.text1}" %>
-        <%# if @firstlist.text1 == nil %>
-        <%# 空だった場合もう一度条件式をやり直したい %>
+        <% unless @firstlist.text1 == "" %>
+          <%= "#{@firstlist.text1}" %>
+          <% i = 1 %>
+          <% else %>
+          <% i = 0 %>
+        <% end %>
       <% elsif num == 2 %>
-        <%= "#{@firstlist.text2}" %>
+        <% unless @firstlist.text2 == "" %>
+          <%= "#{@firstlist.text2}" %>
+          <% i = 1 %>
+          <% else %>
+          <% i = 0 %>
+        <% end %>
       <% elsif num == 3 %>
-        <%= "#{@firstlist.text3}" %>
+        <% unless @firstlist.text3 == "" %>
+          <%= "#{@firstlist.text3}" %>
+          <% i = 1 %>
+          <% else %>
+          <% i = 0 %>
+        <% end %>
       <% elsif num == 4 %>
-        <%= "#{@firstlist.text4}" %>
+        <% unless @firstlist.text4 == "" %>
+          <%= "#{@firstlist.text4}" %>
+          <% i = 1 %>
+          <% else %>
+        <% end %>
       <% elsif num == 5 %>
-        <%= "#{@firstlist.text5}" %>
+        <% unless @firstlist.text5 == "" %>
+          <%= "#{@firstlist.text5}" %>
+          <% i = 1 %>
+          <% else %>
+          <% i = 0 %>
+        <% end %>
       <% elsif num == 6 %>
-        <%= "#{@firstlist.text6}" %>
+        <% unless @firstlist.text6 == "" %>
+          <%= "#{@firstlist.text6}" %>
+          <% i = 1 %>
+          <% else %>
+          <% i = 0 %>
+        <% end %>
       <% end %>
-
-    </div>
-  </li>
-
+    <% end %>
   </div>
+</li>
+
+</div>
 </div>
 
 <%# 右側のメニュー %>
 <div class="right_menu">
-  <%= link_to "戻る", "#", class: "right-list1" %>
-  <%= link_to "もう一回！", auto_select_firstlist_path, class: "auto-select-box" %>
+<%= link_to "戻る", "#", class: "right-list1" %>
+<%= link_to "もう一回！※", auto_select_firstlist_path, class: "auto-select-box" %>
 </div>
 
 </div>
-
