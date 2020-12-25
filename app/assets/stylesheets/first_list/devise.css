@@ -61,3 +61,19 @@
   font-size: 14px;
   cursor: pointer;
 } */
+
+.guest-login-btn {
+  display: block;
+  width: 348px;
+  height: 34px;
+  background:#d8ac35;
+  margin: 10px auto 0;
+  padding-top: 3px;
+  color: white;
+
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}

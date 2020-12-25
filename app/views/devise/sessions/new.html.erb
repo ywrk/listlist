@@ -38,18 +38,25 @@
   <%# <%= render 'shared/error_messages', model: f.object %>
 
   <div class="field">
-    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレス", autofocus: true ,value: "test@mail" %>
+    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"メールアドレス", autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password, class:"input-default", id:"password", placeholder:"パスワード" ,value: "qqq111" %>
+    <%= f.password_field :password, class:"input-default", id:"password", placeholder:"パスワード" %>
   </div>
+
+  <%# ,value: "test@mail",value: "qqq111" テストユーザー実装したら消す %>
+
 
   <div class='actions'>
     <%= f.submit "ログイン" , class:"login-btn" %>
   </div>
 </div>
 <% end %>
+
+  <div class="">
+  <%= link_to 'ゲストログイン（閲覧用）', users_sign_in_guest_sign_in_path, method: :post ,class: "guest-login-btn"%> 
+  </div>
 
 
 
