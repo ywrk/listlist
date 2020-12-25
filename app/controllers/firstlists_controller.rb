@@ -1,6 +1,6 @@
 class FirstlistsController < ApplicationController
   before_action :set_firstlist, except: [:index, :new, :create]
-
+  
   def index
     @firstlists = Firstlist.all
   end
