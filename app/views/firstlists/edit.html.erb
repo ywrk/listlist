@@ -31,6 +31,8 @@
 
 <%# 右側のメニュー %>
     <div class="right_menu">
-      <%= link_to "このリストを削除する", firstlist_path, method: :delete, class: "right-list1" %>
+      <%= link_to "戻る", root_path, class: "right-list1" %>
+
+      <%= link_to "このリストを削除する", firstlist_path,data: { confirm: "本当に削除しますか？" }, method: :delete, class: "right-list2" %>
     </div>
 

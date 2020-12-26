@@ -253,6 +253,22 @@ align-items: center;
   align-items: center;
 }
 
+.right-list3 {
+  position: absolute;
+  margin: 0 0 auto 57px;
+  top: 297px;
+  width: 244px;
+  height: 57px;
+  background: #E3E3E3;
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .list-table {
   display: flex;
   flex-wrap: wrap;
