@@ -3,9 +3,9 @@ class Firstlist < ApplicationRecord
 
   with_options presence: true do
     validates :title
+    validates :text1
   end
   
-  # validates :text1
   # validates :text2
   # validates :text3
   # validates :text4
