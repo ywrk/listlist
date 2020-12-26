@@ -2,7 +2,7 @@ class FirstlistsController < ApplicationController
   before_action :set_firstlist, except: [:index, :new, :create]
   
   def index
-    @firstlists = Firstlist.all
+    @firstlists = Firstlist.where(user_id: current_user )
   end
 
   def new
