@@ -22,14 +22,14 @@
   
   <%# リストがない場合のダミー %>
   <% if @firstlists.empty? %>
-  <li class='list-table'>
+  <div class='list-table'>
     <%= link_to "普段の行動を", "#", class: "main-list" %>
     <%= link_to "リストで整理しよう！", "#", class: "main-list" %>
     <%= link_to "『新規リスト』から", "#", class: "main-list" %>
     <%= link_to "リストを作成してね！", "#", class: "main-list" %>
     <%= link_to "例：寝る前にすること", "#", class: "main-list" %>
     <%= link_to "例：休日の掃除", "#", class: "main-list" %>
-  </li>
+  </div>
   <%end%>
   <%# リストがない場合のダミー %>
 

@@ -7,7 +7,7 @@
 <div class="main_menu">
   <div class="bg_image">
 
-  <li class='firstlist-table'> 
+  <div class='firstlist-table'> 
     <%= link_to "#{@firstlist.title}", "#", class: "firstlist-title" %>
     <% if @firstlist.text1.present? %>
       <%= link_to "#{@firstlist.text1}", "#", class: "firstlist-list" %>
@@ -27,7 +27,7 @@
     <% if @firstlist.text6.present? %>
       <%= link_to "#{@firstlist.text6}", "#", class: "firstlist-list" %>
     <% end %>
-  </li>
+  </div>
 
   </div>
 </div>

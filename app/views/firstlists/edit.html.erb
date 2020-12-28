@@ -11,7 +11,7 @@
     <%= form_with(model: @firstlist, local: true) do |f| %>
     <%#= render 'shared/error_messages', model: @firstlist %>
     
-     <li class='new-form'>
+     <div class='new-form'>
       <%= f.text_field :title, class:"firstlist-form", id:"firstlist-form", placeholder:"リストタイトル（20文字以内）", maxlength:"20" %>
       <%= f.text_field :text1, class:"firstlist-form", id:"firstlist-form", placeholder:"リスト１（20文字以内）", maxlength:"20" %>
       <%= f.text_field :text2, class:"firstlist-form", id:"firstlist-form", placeholder:"リスト２（20文字以内）", maxlength:"20" %>
@@ -20,7 +20,7 @@
       <%= f.text_field :text5, class:"firstlist-form", id:"firstlist-form", placeholder:"リスト５（20文字以内）", maxlength:"20" %>
       <%= f.text_field :text6, class:"firstlist-form", id:"firstlist-form", placeholder:"リスト６（20文字以内）", maxlength:"20" %>
       <%= f.submit "登録する", class: "submit-btn" %>
-    </li>
+    </div>
     <% end %>
 <%# /入力フォーム %>
 

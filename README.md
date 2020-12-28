@@ -84,9 +84,9 @@ test@mail
 
 ### Association
 - belongs_to :user
-- has_many :secondlists
+- has_many :secondlists（未実装）
 
-## secondlists テーブル
+## secondlists テーブル（未実装）
 
 | Column | Type | Options |
 | --------------------- | ----------- | ------------------------------- |
