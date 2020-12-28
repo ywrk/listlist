@@ -8,7 +8,10 @@
   <div class="bg_image">
 
   <div class='firstlist-table'> 
-    <%= link_to "#{@firstlist.title}", "#", class: "firstlist-title" %>
+    <h2 class="firstlist-title">
+    <%= "#{@firstlist.title}" %> </h2>
+
+
     <% if @firstlist.text1.present? %>
       <%= link_to "#{@firstlist.text1}", "#", class: "firstlist-list" %>
     <% end %>

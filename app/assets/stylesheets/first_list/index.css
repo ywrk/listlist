@@ -21,12 +21,15 @@
 .header-right {
   position: absolute;
   right: 30px;
+  margin-top: 15px;
+
 }
 
 .login-lists {
   list-style: none;
   display: flex;
   text-align: right
+
 }
 
 .log-in-btn {
@@ -279,7 +282,7 @@ align-items: center;
 
 .main-list {
   position:relative;
-  top:-70px;
+  top:-85px;
   width: 258px;
   height: 58px;
   background: #FFFFFF;
@@ -356,4 +359,8 @@ align-items: center;
   list-style: none;
   color: red;
   font-weight: bold;
+}
+
+ul {
+  position: relative;
 }
