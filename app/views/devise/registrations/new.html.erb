@@ -6,7 +6,7 @@
 <%= form_with(model: @user, url: user_registration_path, class: 'registration-main', local: true)do |f| %>
 <div class='field'>
 
-  <%# <%= render 'shared/error_messages', model: f.object %>
+  <%= render 'devise/shared/error_messages', model: f.object %>
 
   <div class="field">
     <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"ニックネーム（8文字まで）", maxlength:"8" %>
