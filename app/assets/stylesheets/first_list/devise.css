@@ -77,3 +77,32 @@
   border: none;
   cursor: pointer;
 }
+
+.delete-user-btn {
+  position: absolute;
+  margin: 0 0 auto 57px;
+  top: 207px;
+  width: 244px;
+  height: 57px;
+  background: #535353;
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-create-btn {
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.device-label {
+  display: inline-block;
+  margin: 25px auto 0px ;
+}
