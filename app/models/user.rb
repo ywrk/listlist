@@ -6,8 +6,11 @@ class User < ApplicationRecord
 
   with_options presence: true do
     VALID_PASSWORD_REGEX = /\A(?=.*?[a-zA-Z])(?=.*?\d)\w{6,}\z/.freeze
-    validates :nickname,length: { maximum: 8 }
+    VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
+    validates :nickname,length: { maximum: 8 }
+    validates :email, uniqueness: true, format: { with: VALID_EMAIL_REGEX }
+    
     with_options on: :create do
     validates :password, format: { with: VALID_PASSWORD_REGEX, message: '半角6文字以上で英字と数字の両方を含めて設定してください' }
     end
