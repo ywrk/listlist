@@ -7,9 +7,9 @@ List-list （リストリスト）
 「やることが多くて面倒になる」「優柔不断で決められない」という問題解決を目指しています。
 
 例えば、こんなことありませんか？
-掃除をしようとしていても「ロボット掃除機かけて、食器洗って、タオル類を回収してから洗濯機を回して…」
+掃除をしようとしていても「掃除機かけて、食器洗って、タオル類を回収してから洗濯機を回して…」
 とやることが多いと面倒になってしまう。
-外食しようとしても店が決められない。店を決めてもメニューを決められない。
+外食しようとして「店が決められない。店を決めてもメニューを決められない！」
 
 その問題を、行動をリスト化しておくことで防げると考えました。行動を起こす前にこのアプリを開いて、登録しておいたリスト通りに行うことで「やることが多くて面倒になる」という問題は解決できるでしょう！
 そして、「優柔不断で決めれない」場合は、アプリのAUTO SELECTボタンを押せば、登録しておいたリストから１つをあなたの代わりに選んでくれるのです！
@@ -66,7 +66,6 @@ test@mail
 
 ### Association
 - has_many :firstlists
-- has_many :secondlists
 
 ## firstlists テーブル
 
@@ -80,26 +79,7 @@ test@mail
 | text5 | string | |
 | text6 | string | |
 | user | references | null: false, foreign_key: true |
-| secondlist | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
-- has_many :secondlists（未実装）
 
-## secondlists テーブル（未実装）
-
-| Column | Type | Options |
-| --------------------- | ----------- | ------------------------------- |
-| title | string | null: false |
-| text1 | string | |
-| text2 | string | |
-| text3 | string | |
-| text4 | string | |
-| text5 | string | |
-| text6 | string | |
-| user | references | null: false, foreign_key: true |
-| firstlist | references | null: false, foreign_key: true |
-
-### Association
-- belongs_to :firstlist
-- belongs_to :user
