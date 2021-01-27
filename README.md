@@ -28,19 +28,19 @@ https://listlist2020.herokuapp.com/
 1. トップページのリスト表記を左寄せに変更　２列表記で奇数のリストは真ん中に表示されていた。デザイン的に左寄せがいいとの声から変更
 
 # 使用技術
-## バックエンド
+### バックエンド
 Ruby, Ruby on Rails
-## フロントエンド
+### フロントエンド
 HTML,CSS,Scss
-## デザインソフト
+### デザインソフト
 Illustrator,XD
-## データベース
+### データベース
 MySQL,Sequel Pro
-## テスト
+### テスト
 RSpec
-## エディタ
+### エディタ
 VSCode
-## ソース管理
+### ソース管理
 GitHub,GitHubDesktop
 
 
