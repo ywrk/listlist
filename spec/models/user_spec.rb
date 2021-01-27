@@ -56,7 +56,7 @@ RSpec.describe User, type: :model do
         @user.password_confirmation = "aaaaaa"
         expect(@user.errors.full_messages).to include("半角6文字以上で英字と数字の両方を含めて設定してください")
       end
-    end
+    end 
 
   end
 end
