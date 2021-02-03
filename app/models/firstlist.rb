@@ -6,7 +6,4 @@ class Firstlist < ApplicationRecord
     validates :text1, presence: { message: "リスト１を入力してください"}
   end
 
-  # def self.auto_select
-  # end
-
 end
