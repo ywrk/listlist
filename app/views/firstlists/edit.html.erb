@@ -10,7 +10,7 @@
 <%# 入力フォーム %>
     <%= form_with(model: @firstlist, local: true) do |f| %>
     <%= render 'error_messages', model: @firstlist %>
-    
+
      <div class='new-form'>
       <%= f.text_field :title, class:"firstlist-form-title", id:"firstlist-form", placeholder:"リストタイトル（20文字以内）※必須", maxlength:"20" %>
       <%= f.text_field :text1, class:"firstlist-form", id:"firstlist-form", placeholder:"リスト１（20文字以内）※必須", maxlength:"20" %>
@@ -35,4 +35,3 @@
 
       <%= link_to "このリストを削除する", firstlist_path,data: { confirm: "本当に削除しますか？" }, method: :delete, class: "right-list2" %>
     </div>
-
